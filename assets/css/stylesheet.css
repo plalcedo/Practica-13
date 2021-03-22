@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+header {
+    background-color: #2b2d42;
+    color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: 5vh;
+}
+
+nav ul li {
+    list-style-type: none;
+    display: inline-block;
+    padding: 10px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+nav ul li:hover {
+    background-color: #ef233c;
+    transition: 0.5s;
+}
+
+h1 {
+    margin-left: 20px;
+}
+
+ul li {
+    list-style-type: none;
+    padding: 10px;
+}
+
+ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+ul li:hover {
+    background-color: #ef233c;
+    transition: 0.5s;
+}
+
+.menu {
+    width: 20%;
+    height: auto;
+    position: absolute;
+    right: 0;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    background-color: #8d99ae;
+}
+
+.d-none {
+    display: none;
+}
+
+.d-flex {
+    display: flex;
+    z-index: 999999;
+}
+
+#btnMenu:hover {
+    color: #ef233c;
+}
+
+p {
+    text-align: justify;
+    padding: 20px;
+}
+
+.fondoDegradado {
+    filter: blur(3px);
+}
+
+
+/* Ajustes de tamaño */
+
+
+/* Small */
+
+@media(max-width: 640px) {
+    .navGrande {
+        display: none;
+    }
+    #menuEscondido {
+        height: 95vh;
+        width: 40%;
+    }
+    #btnMenu {
+        margin-right: 10px;
+    }
+}
+
+
+/* Medium */
+
+@media(min-width: 641px) and (max-width: 1007px) {
+    .navGrande {
+        display: none;
+    }
+    .navPeq i {
+        margin-right: 20px;
+        font-size: 25px;
+    }
+    #menuEscondido {
+        height: 95vh;
+    }
+}
+
+
+/* Large */
+
+@media(min-width: 1008px) {
+    .navPeq {
+        display: none;
+    }
+    #menuEscondido {
+        display: none;
+    }
+    .fondoDegradado {
+        filter: blur(0);
+    }
+}
